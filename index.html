@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+    <div class = "heading">
+
+    <h2>THE CODE REVIEW</h2>
+
+    </div>
+
+    <div class = "signup-statement">
+
+       <h2>Signup for our newsletter</h2>
+       <p>Get the latest news on how your code is doing right in your inbox</p>
+       <hr class = "thick-hr">
+       <hr>
+     </div>
+
+
+      
+      <form action="index.html" method="post">
+
+
+        <fieldset>
+
+          <legend>Contact Information</legend>
+          <label for = "name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder = "Required"> 
+
+          <label for = "mail">Email Address</label>
+          <input type="email" id="mail" name="user_email" placeholder = "Required">
+
+          <label for = "phone">Phone Number</label>
+          <input type="tel" id="phone" name="user_phone"> 
+
+          <label for = "address">Street Address</label>
+          <input type="text" id="address" name="user_address"> 
+
+          <label for = "city">City</label>
+          <input type="text" id="city" name="user_city"> 
+
+          <label for = "state">State</label>
+          <select id = "state" name = "user_state">
+              <optgroup label = "">
+              <option value="" disabled selected>Choose State</option>
+              <option value = "north-carolina">North Carolina</option>
+              <option value = "south-carolina">South Carolina</option>
+              <option value = "tennessee">Tennessee</option>
+              <option value = "virginia">Virginia</option>
+              <option value = "florida">Florida</option>
+           </optgroup>
+          </select>
+           
+
+          <label for = "zip">Zip Code</label>
+          <input type="text" id="zip" name="user_zip"> 
+        </fieldset>
+
+        <hr>
+        
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to receive</p>
+
+          <input type = "checkbox" id = "html-news" value = "newsletter-options-html-options" name = "user_html"><label class = "light" for = "html-news">HTML News</label>
+          <br>
+
+           <input type = "checkbox" id = "css-news" value = "newsletter-options-css-options" name = "user_css"><label class = "light" for = "css-news">CSS News</label>
+
+           <br>
+
+           <input type = "checkbox" id = "javascript-news" value = "newsletter-options-javascript-options" name = "user_javascript"><label class = "light" for = "javascript-news">Javascript News</label>
+
+           <br>
+
+           <p>Newsletter format</p>
+
+           <input type = "radio" id = "html-radio" value = "html-radio" name = "newsletter-format"><label for = "html-radio" class = "light">HTML</label>
+           <br>
+
+           <input type = "radio" id = "plaintext-radio" value = "plaintext-radio" name = "newsletter-format"><label for = "plaintext-radio" class = "light">Plain Text</label>
+
+           <p>Other topics you'd like to hear about</p>
+           <textarea></textarea>
+          
+        
+        
+      </fieldset>
+        
+        
+        
+     	 <button type = "submit">Sign Up</button>
+      
+      </form>
+
+      <footer>
+
+      <p>Copyright The Code Review</p>
+      </footer>
+      
+      
+    </body>
+</html>
